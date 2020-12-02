@@ -37,4 +37,23 @@ else(floor > 20)
 console.log(brickCalculator(11));
 
 // problem-4: solution
-
+function tinyFriend(array){
+    var shortest = '';
+    if(array.length > 0){
+        for(var i = 0; i < array.length; i++){
+            if(typeof array[i] === 'string'){
+                if(shortest.length == 0){
+                    shortest = array[i];
+                    continue;
+                }
+                if(array[i].length < shortest.length){
+                    shortest = array[i];
+                }
+            }
+        }
+    }
+    return shortest;  
+}
+var name = ["raf", "amin"];
+console.log(tinyFriend(name));
+console.log(tinyFriend(['kamina', 'hasivur', 'arif']));
