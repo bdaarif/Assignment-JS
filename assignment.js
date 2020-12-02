@@ -6,5 +6,11 @@ function feetToMile(feet){
 feetToMile(5);
 
 // Problem-2: Solution
-
-
+function woodCalculator(c, t, b){
+    var chairMeasure = 1 * c;
+    var tableMeasure = 3 * t;
+    var bedMeasure = 5 * b;
+    var totalWoodMeasure = chairMeasure + tableMeasure + bedMeasure;
+    console.log(totalWoodMeasure);
+}
+woodCalculator(5,5,10);
